@@ -1,0 +1,184 @@
+body {
+  background-color: black;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+}
+
+/*Menu*/
+
+.pasek-menu {
+  position: relative;
+}
+
+.container-nawigacja {
+  float: right;
+  text-align: right;
+  position: relative;
+  margin-left: auto;
+  padding: 0;
+}
+
+.lista-menu {
+  float: right;
+  text-align: right;
+  position: relative;
+  padding: 10px;
+}
+
+.lista-menu > li > a {
+  font-size: 20px;
+  padding: 0px 10px;
+  color: black;
+  font-family: "Jura", sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lista-menu > li > a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo {
+  float: left;
+}
+
+.motto {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+}
+
+.motto > h2 {
+  font-size: 40px;
+
+  padding: 30px;
+}
+.border-motto {
+  border-bottom: 1px solid gray;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  background: transparent;
+  transition: all 500ms linear;
+}
+
+nav a {
+  transition: all 500ms linear;
+}
+
+nav.scrolled {
+  background: #282828;
+  color: white;
+}
+
+nav.scrolled a {
+  color: white;
+}
+
+nav.przyklejenie {
+  position: sticky;
+  z-index: 1200;
+}
+
+/*slider*/
+
+@media screen and (max-width: 768px) {
+  .bg-transparent {
+    background: #000 !important;
+  }
+}
+.carousel-caption {
+  padding-bottom: 0;
+  padding-top: 0;
+  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-item {
+  max-height: 800px;
+  object-fit: cover;
+}
+/*1 element*/
+
+.blok-1 {
+  padding: 100px 200px;
+  background-color: #434343;
+  color: white;
+}
+
+.blok-1 > h1 {
+  text-align: center;
+}
+
+.photo-1 {
+  max-height: 400px;
+  position: relative;
+  z-index: 100;
+  left: -15%;
+  margin-top: 100px;
+}
+
+.oferta-blok {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Jura", sans-serif;
+  text-align: center;
+  padding: 100px;
+}
+.oferta-blok > h2 {
+  font-size: 50px;
+}
+
+.icon-block {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icon-single {
+  padding: 20px;
+}
+
+.icon-border {
+  border-right: 2px solid lightgray;
+}
+
+.oferta-single {
+  text-align: center;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.border-oferta {
+  width: 200px;
+  border: 1px solid lightgray;
+  margin-right: auto;
+  margin-left: auto;
+}
