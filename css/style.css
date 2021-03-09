@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
   overflow-x: hidden;
   width: 100%;
   margin: 0;
@@ -18,9 +18,10 @@ a {
 }
 
 /*Menu*/
-
-.pasek-menu {
-  position: relative;
+.belka-nav {
+  background-color: white;
+  margin-top: -40px;
+  z-index: 1301;
 }
 
 .container-nawigacja {
@@ -42,7 +43,6 @@ a {
   font-size: 20px;
   padding: 0px 10px;
   color: black;
-  font-family: "Jura", sans-serif;
   text-decoration: none;
   font-weight: 500;
 }
@@ -55,32 +55,26 @@ a {
 
 .logo {
   float: left;
+  width: 190px;
+  margin-left: 50px;
+  padding: 10px;
 }
 
 .motto {
+  width: 100%;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: "Jura", sans-serif;
-}
-
-.motto > h2 {
-  font-size: 40px;
-
-  padding: 30px;
-}
-.border-motto {
-  border-bottom: 1px solid gray;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #000080;
+  padding-bottom: 50px;
 }
 
 nav {
   position: -webkit-sticky;
   position: fixed;
   top: 0;
-  height: 69px;
+  height: 70px;
   width: 100%;
   background: transparent;
   transition: all 500ms linear;
@@ -91,8 +85,9 @@ nav a {
 }
 
 nav.scrolled {
-  background: #282828;
+  background: #000080;
   color: white;
+  min-width: 100% !important;
 }
 
 nav.scrolled a {
@@ -120,65 +115,12 @@ nav.przyklejenie {
 }
 
 .carousel-item {
-  max-height: 800px;
+  max-height: 600px;
   object-fit: cover;
+  z-index: 1;
+}
+
+.carousel {
+  top: -35px;
 }
 /*1 element*/
-
-.blok-1 {
-  padding: 100px 200px;
-  background-color: #434343;
-  color: white;
-}
-
-.blok-1 > h1 {
-  text-align: center;
-}
-
-.photo-1 {
-  max-height: 400px;
-  position: relative;
-  z-index: 100;
-  left: -15%;
-  margin-top: 100px;
-}
-
-.oferta-blok {
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Jura", sans-serif;
-  text-align: center;
-  padding: 100px;
-}
-.oferta-blok > h2 {
-  font-size: 50px;
-}
-
-.icon-block {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.icon-single {
-  padding: 20px;
-}
-
-.icon-border {
-  border-right: 2px solid lightgray;
-}
-
-.oferta-single {
-  text-align: center;
-  padding: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.border-oferta {
-  width: 200px;
-  border: 1px solid lightgray;
-  margin-right: auto;
-  margin-left: auto;
-}
