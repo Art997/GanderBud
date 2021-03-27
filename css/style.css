@@ -53,8 +53,9 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-.navbar-toggler{
+ #rozwijanie {
   text-align: right;
+  position:relative;
 }
 
 .slogan{
@@ -94,6 +95,10 @@ a {
     padding:50px 10px !important;
     font-size: 20px !important;
   }
+
+  .icon-text{
+    padding: 0px 20px !important;
+  }
 }
 
 @media(max-width:850px){
@@ -130,6 +135,16 @@ a {
 
 .header-info-container{
   text-align: right;
+}
+
+.header-info a{
+  color:white;
+  transition: all 0.2s ease-in ;
+}
+
+.header-info a:hover{
+  color:white;
+  opacity:0.6;
 }
 
 .motto {
@@ -208,18 +223,18 @@ nav.przyklejenie {
 }
 
 .carousel-item {
-  max-height: 600px;
+  max-height: 700px;
   object-fit: cover;
   z-index: 1;
 }
 
 /*title-page*/
 .first-block-background{
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(201, 90, 0);
 }
 
 .cont-block-middle{
-  background-color: rgb(68, 68, 68) ;
+  background-color: rgb(221, 104, 8) ;
   color:white;
   padding: 30px;
 }
@@ -237,7 +252,7 @@ nav.przyklejenie {
 
 div {
   --color-bright: #ffffff;
-  --color-orange: #000080;
+  --color-orange: #ffffff;
   background: var(--body-background-color);
 }
 
@@ -421,3 +436,54 @@ div {
   padding:10px 0px;
 }
 
+/*ikony-medium*/
+.medium-icon-container div{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+.medium-icon-container div i{
+  background: #fc8f02;
+  border-radius: 50%;
+  height: 50px;
+  margin: 0 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.medium-icon-container div i:hover {
+  animation: transform 0.5s forwards, shadow 1s forwards;
+  -ms-animation: transform 0.5s forwards, shadow 1s forwards;
+  -moz-animation: transform 0.5s forwards, shadow 1s forwards;
+  -webkit-animation: transform 0.5s forwards, shadow 1s forwards;
+}
+
+.medium-icon-container div i:hover {
+  background: #fc8f02;
+}
+.medium-icon-container div i:before {
+  color: #fff;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+
+@-webkit-keyframes shadow {
+  from {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes shadow {
+  from {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
