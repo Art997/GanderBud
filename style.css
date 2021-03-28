@@ -556,7 +556,7 @@ div {
 }
 
 .bg-photo{
-  background-image: url("img/slider1.jpg");
+  background-image: url(".../img/slider1.jpg");
   min-height: 500px;
   width: 100%;
   background-repeat: no-repeat;
